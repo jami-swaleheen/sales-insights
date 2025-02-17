@@ -23,51 +23,50 @@ A RESTful API built with **Express.js** and **TypeScript** that processes sales 
 ## Setup
 
 ### 1. Clone the repository:
-```bash
+
+```
 git  clone <repository-url>
 cd  sales-insights
 ```
 
 ### 2. Install dependencies:
-```bash
+
+```
 npm  install
 ```
 
 ### 3. Set up environment variables:
 Create a .env file in the project root and add:
+
 ```
 PORT=3000
 OPENAI_API_KEY=your_api_key_here
 ```
 
 ### 4. Run the development server:
-```bash
+
+```
 npm  run  dev
 ```
 
   
 
 ### 5. Build and start for production:
-```bash
 
+```
 npm  run  build
-
 npm  start
-
 ```
 
   
 
 ### 6. Run with Docker (Optional):
 
-  
-
 Build the Docker image:
 
   
 
-```bash
-
+```
 docker  build  -t  sales-insights-api  .
 
 ```
@@ -78,8 +77,7 @@ Run the Docker container:
 
   
 
-```bash
-
+```
 docker  run  -p  3000:3000  --env-file  .env  sales-insights-api
 ```
 ## API  Endpoints
@@ -173,8 +171,7 @@ sales-insights-api/
 
 Run  tests  using:
 
-```bash
-
+```
 npm test
 
 ```
